@@ -1,0 +1,22 @@
+{
+  "name": "intro-to-functions",
+  "version": "1.0.0",
+  "description": "Write functions in JavaScript that manipulate strings.",
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "expect": "^1.20.2",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "mocha-jsdom": "^1.1.0",
+    "mocha-multi": "^0.9.0"
+  }
+}

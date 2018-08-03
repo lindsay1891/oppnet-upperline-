@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 500px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var Jordan = {lat: 29.534667, lng: 35.407909};
+  var Brazil = {lat: -23.550520,lng:-46.633309};
+  var Japan = {lat: 34.693738, lng:135.502165};
+  var Columbia = {lat: 4.710989,lng:-74.072092}; 
+  
+  var locations = [Jordan,Brazil,Japan,Columbia]
+  
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 1.5, center: Jordan});
+  // The marker, positioned at Uluru
+  locations.forEach(place =>{
+  var marker = new google.maps.Marker({position: place, map: map})
+  })
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBa1dfvcXoEUxnHQa3F5fB_pkXIykQ07T4&callback=initMap">
+    </script>
+  </body>
+</html>

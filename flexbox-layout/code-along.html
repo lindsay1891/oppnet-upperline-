@@ -1,0 +1,56 @@
+<head>
+    <style type="text/css">
+    body{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 75px auto 75px;
+        height: 100vw;
+    }
+    #navbar {
+        grid-column-start: 1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:2;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    #col1{       
+        grid-column-start: 1;
+        grid-column-end:2;
+        grid-row-start:2;
+        grid-row-end:3;
+        background-color: lightgrey;}
+    #col2{       
+        grid-column-start: 2;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end:3;
+        background-color: lightblue;}
+    #col3{      
+        grid-column-start: 3;
+        grid-column-end:4;
+        grid-row-start:2;
+        grid-row-end:3;
+        background-color: lightgrey;}
+    #footer{        
+        grid-column-start: 3;
+        grid-column-end:4;
+        grid-row-start:3;
+        grid-row-end:4;
+        background-color: blue;} 
+        
+    </style>
+</head>
+
+<body>
+    <div id= "navbar"></div>
+    <div id= "col1"></div>
+    <div id= "col2"></div>
+    <div id= "col3"></div>
+    <div id= "footer"></div>
+    
+    
+    
+</body>
